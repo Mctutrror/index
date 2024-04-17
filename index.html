@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            background-color: #b2b3b2;
+            width: 100%;
+            height: 1000px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-template-areas:
+            "head head head head head head"
+            "conp conp conp conp conp conp"
+            "conp conp conp conp conp conp"
+            "conp conp conp conp conp conp"
+            "shop shop shop shop form form"
+            "shop shop shop shop form form"
+            "pie pie pie pie pie pie";
+            gap: 10px;
+        }
+        .head {
+            grid-area: head;
+            background-color: aliceblue;
+            border: solid 2px;
+        }
+        .conp {
+            grid-area: conp;
+            background-color: black;
+            border: solid 2px;
+
+        }
+        .form {
+            grid-area: form;
+            background-color: aqua;
+            border: solid 2px;
+
+        }
+        .shop {
+            grid-area: shop;
+            background-color: chartreuse;
+            border: solid 2px;
+
+        }
+        .pie {
+            grid-area: pie;
+            background-color: cadetblue;
+            border: solid 2px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="head"></div>
+        <div class="conp"></div>
+        <div class="form"></div>
+        <div class="shop"></div>
+        <div class="pie"></div>
+    </div>
+</body>
+</html>
